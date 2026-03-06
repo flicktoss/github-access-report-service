@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+github:
+  base-url: https://api.github.com
+  token: ${GITHUB_TOKEN:}
+
+spring:
+  cache:
+    type: simple
+
+
+
+logging:
+  level:
+    com.githubaccessreport: DEBUG
+    org.springframework.web.reactive: INFO
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"
